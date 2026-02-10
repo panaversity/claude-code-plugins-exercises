@@ -113,6 +113,32 @@ Create `README.md` inside the plugin with:
 - Hook behavior documentation
 - Troubleshooting section
 
+### Step 6: Create a Marketplace and Distribute
+
+Your plugin is complete. Now make it discoverable.
+
+1. Create a `.claude-plugin/marketplace.json` in a parent directory listing your plugin:
+
+   ```json
+   {
+     "name": "my-plugins",
+     "owner": { "name": "Your Name" },
+     "plugins": [
+       {
+         "name": "your-plugin-name",
+         "source": "./your-plugin-directory",
+         "description": "One sentence description"
+       }
+     ]
+   }
+   ```
+
+2. Register it as a local marketplace: `/plugin marketplace add ./path-to-marketplace`
+3. Verify your plugin appears in the Discover tab of `/plugin`
+4. Write a README explaining how others can add your marketplace and install the plugin
+
+This step completes the full lifecycle: design → build → test → package → distribute.
+
 ## Deliverables
 
 1. `design.md` -- Plugin architecture document

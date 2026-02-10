@@ -13,8 +13,10 @@ Set up and execute a Ralph Wiggum Loop to fix ESLint errors in a project autonom
 
 ## Prerequisites
 
-- Ralph Wiggum plugin installed (`/plugin install ralph-wiggum@claude-plugins-official`)
+- Ralph Wiggum plugin installed (`/plugin install ralph-loop@claude-plugins-official`)
 - ESLint installed in the project (`npm install`)
+
+> **Setup check**: Run `cd project && npm install && npx eslint src/ --format compact` before starting. You should see 23 errors. If ESLint is not installed or errors differ from `eslint-baseline.md`, resolve the setup issue first.
 
 ## Your Tasks
 

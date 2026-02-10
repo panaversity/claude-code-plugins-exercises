@@ -13,6 +13,8 @@ Learn to survey the Claude Code plugin marketplace and make informed decisions a
 
 ## Your Tasks
 
+> **Note**: The plugin marketplace evolves over time. If no plugin matches a workflow need, that's a valid finding — recommend "Build Custom" and describe what you'd create. The evaluation PROCESS matters more than finding a perfect match.
+
 ### Step 1: Review the Workflow Needs
 
 Read `workflow-needs.md` carefully. Each need describes a concrete workflow problem that might be solved by an existing plugin.

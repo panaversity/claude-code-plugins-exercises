@@ -12,6 +12,8 @@ Install a plugin from the official marketplace and use it on a real project. Exp
 
 ## Your Tasks
 
+> **Prerequisites check**: Run `npm --version` to verify Node.js is installed. If installing an LSP plugin, ensure the language server binary is available (e.g., `typescript-language-server --version`). If LSP installation fails, complete the exercise using only `commit-commands` — the core learning is the install-configure-verify cycle, not the specific plugin.
+
 ### Step 1: Install the commit-commands Plugin
 
 Install from the official marketplace:

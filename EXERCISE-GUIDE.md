@@ -8,11 +8,11 @@ _By Panaversity -- Configure, Extend, Automate_
 
 ## How This Guide Works
 
-Every exercise in this guide teaches one layer of Claude Code's extensibility system -- from configuring settings through building and distributing plugins to running autonomous iteration loops. These aren't abstract concepts. They are working configurations you build, test, and debug on real scenarios.
+This guide contains 12 core exercises across 6 modules plus 3 capstone projects (15 total). Each exercise teaches one layer of Claude Code's extensibility system -- from configuring settings through building and distributing plugins to running autonomous iteration loops. These aren't abstract concepts. They are working configurations you build, test, and debug on real scenarios.
 
 **The exercise pattern:**
 
-Each module covers one extensibility layer with two exercises. Exercise X.1 is **Hands-on** -- you build or configure something real. Exercise X.2 is **Debug/Diagnose** -- you fix a broken configuration, audit a problematic setup, or analyze a failure.
+Each module covers one extensibility layer with two exercises. Exercise X.1 is **Hands-on** -- you build or configure something real. Exercise X.2 is **Debug/Diagnose** -- you fix a broken configuration, audit a problematic setup, or analyze a failure. Marketplace distribution is integrated into the Capstone A project rather than being a standalone module.
 
 **The three skills you'll develop:**
 
@@ -267,7 +267,7 @@ Packaging is just organization plus a manifest. The skills themselves don't chan
 
 ---
 
-### Exercise 5.2 -- Full Plugin Bundle
+### Exercise 5.2 -- Full Plugin Bundle (Advanced)
 
 **The Problem:**
 A complete "Team Productivity" plugin needs skills, hooks, and an MCP server configuration bundled together. This is the full plugin packaging exercise -- everything you've learned about skills, hooks, and plugins combined into one distributable package.
@@ -287,57 +287,6 @@ A complete "Team Productivity" plugin needs skills, hooks, and an MCP server con
 - The full plugin directory layout for multi-component plugins
 - Testing strategies for complex plugins (component-by-component, then integrated)
 - Documentation requirements for team-facing plugins
-
----
-
-## Module 6: Marketplace Distribution
-
-> **Core Skill:** Create plugin marketplaces and distribute plugins to teams and the community.
-
-### Exercise 6.1 -- Create Marketplace
-
-**The Problem:**
-You have two plugins ready to share with your team, but they need a marketplace to discover and install them easily. You need to create a marketplace listing, organize the directory structure, and configure it as a marketplace source.
-
-**Your Task:**
-
-1. Create the marketplace directory structure
-2. Write a `marketplace.json` listing the two provided plugins
-3. Add the plugins to the marketplace directory
-4. Configure the marketplace as a source using `/plugin marketplace add`
-5. Verify plugins appear in the Discover tab
-
-**The Principle at Work:**
-A marketplace is just a catalog -- a `marketplace.json` file that points to plugin directories. The infrastructure is simple; the value is in organization and discoverability.
-
-**What You'll Learn:**
-
-- The `marketplace.json` format and required fields
-- How marketplace sources work (local, GitHub, GitLab)
-- The relationship between plugins and marketplaces (apps vs. app store)
-- How to test marketplace listings locally before publishing
-
----
-
-### Exercise 6.2 -- Cross-Marketplace
-
-**The Problem:**
-You're evaluating plugins from three different marketplace sources (official Anthropic, a community marketplace, and a company-internal marketplace). Each has plugins that partially overlap. You need to compare them and recommend the best plugin for a specific need.
-
-**Your Task:**
-
-1. Review the three marketplace listings provided
-2. Compare overlapping plugins across marketplaces
-3. Evaluate each based on: feature fit, maintenance quality, scope, and trust level
-4. Write a recommendation document with your analysis
-5. Create a "marketplace evaluation framework" for future decisions
-
-**What You'll Learn:**
-
-- How to evaluate plugin quality across different sources
-- Trust considerations: official vs. community vs. internal marketplaces
-- Feature overlap resolution: when two plugins solve the same problem
-- Documentation standards for plugin recommendations
 
 ---
 
@@ -401,16 +350,16 @@ An activity log from a Ralph Wiggum Loop that ran for 12 iterations without comp
 ### Capstone A -- Full Plugin from Scratch
 
 **The Problem:**
-Build a complete "Code Review" plugin that includes skills for review patterns, hooks for automated checks, and documentation for team adoption. Package it, test it, and create a marketplace entry.
+Build a complete "Code Review" plugin that includes skills for review patterns, hooks for automated checks, and documentation for team adoption. Package it, test it, create a marketplace entry, and distribute it.
 
 **Your Task:**
 
 1. Design the plugin: define skills, hooks, and configurations needed
 2. Create each component: skills for review checklists, hooks for pre-commit checks
 3. Write the plugin manifest (`plugin.json`)
-4. Create marketplace entry (`marketplace.json`)
-5. Test the complete plugin locally with `--plugin-dir`
-6. Write user documentation explaining how to install and use the plugin
+4. Test the complete plugin locally with `--plugin-dir`
+5. Write user documentation explaining how to install and use the plugin
+6. Create a marketplace listing and distribute the plugin
 
 **Deliverables:**
 
@@ -418,6 +367,7 @@ Build a complete "Code Review" plugin that includes skills for review patterns, 
 - Plugin manifest and marketplace listing
 - User documentation (README.md inside the plugin)
 - Test results showing all components work together
+- Marketplace entry with installation instructions
 
 **Estimated Time:** 2-4 hours
 
@@ -477,15 +427,14 @@ Audit your own Claude Code workflow and identify what's missing from your extens
 
 For each exercise, evaluate yourself on:
 
-| Criteria               |          Beginner (1)          |           Developing (2)            |                 Proficient (3)                 |                Advanced (4)                |
-| ---------------------- | :----------------------------: | :---------------------------------: | :--------------------------------------------: | :----------------------------------------: |
-| Settings Understanding |       Uses only defaults       |        Configured one level         |  Manages all 3 levels with correct precedence  | Designs team-wide configuration strategies |
-| Hook Implementation    |      Cannot create hooks       |   Basic hooks, no error handling    | Multi-event hooks with matchers and exit codes | Production hooks with logging and testing  |
-| Plugin Evaluation      |  Cannot navigate marketplace   |         Browses marketplace         |          Evaluates fit systematically          |  Creates evaluation frameworks for teams   |
-| Plugin Creation        |     Cannot create manifest     |     Basic manifest with skills      |          Full bundle with hooks + MCP          |   Production plugins with docs and tests   |
-| Marketplace Competence | Unaware of marketplace concept |      Uses official marketplace      |         Creates personal marketplaces          |     Multi-source marketplace strategy      |
-| Autonomous Iteration   |     Never used Ralph Loop      | Basic loop, poor completion promise |     Effective promises with safety limits      |     Complex loops with cost management     |
-| Integration Thinking   |    Components in isolation     |        Combines 2 components        |            Full extensibility stack            |    Team-wide extensibility architecture    |
+| Criteria               |        Beginner (1)         |           Developing (2)            |                 Proficient (3)                 |                           Advanced (4)                            |
+| ---------------------- | :-------------------------: | :---------------------------------: | :--------------------------------------------: | :---------------------------------------------------------------: |
+| Settings Understanding |     Uses only defaults      |        Configured one level         |  Manages all 3 levels with correct precedence  |            Designs team-wide configuration strategies             |
+| Hook Implementation    |     Cannot create hooks     |   Basic hooks, no error handling    | Multi-event hooks with matchers and exit codes |             Production hooks with logging and testing             |
+| Plugin Evaluation      | Cannot navigate marketplace |         Browses marketplace         |          Evaluates fit systematically          |              Creates evaluation frameworks for teams              |
+| Plugin Creation        |   Cannot create manifest    |     Basic manifest with skills      |          Full bundle with hooks + MCP          | Production plugins with docs, tests, and marketplace distribution |
+| Autonomous Iteration   |    Never used Ralph Loop    | Basic loop, poor completion promise |     Effective promises with safety limits      |                Complex loops with cost management                 |
+| Integration Thinking   |   Components in isolation   |        Combines 2 components        |            Full extensibility stack            |               Team-wide extensibility architecture                |
 
 ---
 

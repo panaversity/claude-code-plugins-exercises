@@ -2,7 +2,7 @@
 
 **By Panaversity -- Master the Full Plugin Lifecycle**
 
-Welcome! This package contains 14 exercises + 3 capstone projects covering Claude Code's extensibility system -- from settings hierarchy and hooks through plugin creation, marketplace distribution, and autonomous iteration with Ralph Wiggum Loop. You'll configure real settings, write working hooks, build plugins from scratch, and run autonomous loops.
+Welcome! This package contains 12 exercises + 3 capstone projects (15 total) covering Claude Code's extensibility system -- from settings hierarchy and hooks through plugin creation and autonomous iteration with Ralph Wiggum Loop. You'll configure real settings, write working hooks, build plugins from scratch, distribute them via marketplaces (in Capstone A), and run autonomous loops.
 
 ---
 
@@ -26,15 +26,12 @@ plugins-exercises/
 |   +-- exercise-4.2-plugin-workflow-chain/          (chain plugins for a complete workflow)
 +-- module-5-plugin-packaging/
 |   +-- exercise-5.1-package-skills-plugin/         (package skills into a plugin)
-|   +-- exercise-5.2-full-plugin-bundle/            (build a complete plugin bundle)
-+-- module-6-marketplace-distribution/
-|   +-- exercise-6.1-create-marketplace/            (create a marketplace listing)
-|   +-- exercise-6.2-cross-marketplace/             (evaluate and compare marketplaces)
+|   +-- exercise-5.2-full-plugin-bundle/            (build a complete plugin bundle -- Advanced)
 +-- module-7-ralph-wiggum/
 |   +-- exercise-7.1-autonomous-loop/               (run your first Ralph Wiggum loop)
 |   +-- exercise-7.2-stuck-loop-debug/              (diagnose a stuck loop from logs)
 +-- module-8-capstones/
-    +-- capstone-A-full-plugin/                     (build a complete plugin from scratch)
+    +-- capstone-A-full-plugin/                     (build a complete plugin + marketplace distribution)
     +-- capstone-B-team-extensibility-kit/          (design extensibility for a team)
     +-- capstone-C-your-workflow/                   (audit and extend your own workflow)
 ```
@@ -67,9 +64,8 @@ plugins-exercises/
 **Week 3 (Plugin Discovery):** Exercises 3.1, 3.2
 **Week 4 (Plugin Usage):** Exercises 4.1, 4.2
 **Week 5 (Plugin Packaging):** Exercises 5.1, 5.2
-**Week 6 (Marketplace Distribution):** Exercises 6.1, 6.2
-**Week 7 (Ralph Wiggum Loop):** Exercises 7.1, 7.2
-**Week 8 (Capstone):** Choose one capstone project
+**Week 6 (Ralph Wiggum Loop):** Exercises 7.1, 7.2
+**Week 7 (Capstone):** Choose one capstone project
 
 ---
 
@@ -88,15 +84,14 @@ Use this for every exercise:
 
 ## Self-Assessment Rubric
 
-| Criteria               |         Beginner (1)         |         Developing (2)          |             Proficient (3)             |                  Advanced (4)                  |
-| ---------------------- | :--------------------------: | :-----------------------------: | :------------------------------------: | :--------------------------------------------: |
-| Settings Understanding |  Uses only default settings  |      Configured one level       |  Manages all 3 levels with precedence  |   Designs team-wide configuration strategies   |
-| Hook Design            |     Cannot create hooks      |    Basic single-event hooks     |    Multi-event hooks with matchers     |  Hook systems with error handling and logging  |
-| Plugin Usage           |    Cannot install plugins    | Installs and uses basic plugins |   Evaluates plugin fit for workflows   |      Chains plugins for complex workflows      |
-| Plugin Creation        |    Cannot create plugins     | Basic manifest with skills only |  Full plugin bundle with hooks + MCP   | Production-quality plugins with documentation  |
-| Marketplace Knowledge  |   Unaware of marketplaces    |    Uses official marketplace    |     Creates personal marketplaces      |   Manages multi-source marketplace strategy    |
-| Autonomous Iteration   |    Never used Ralph Loop     |   Basic loop with simple task   | Effective completion promises + safety | Complex multi-stage loops with cost management |
-| Integration Thinking   | Components used in isolation |      Combines 2 components      |  Full extensibility stack configured   |      Team-wide extensibility architecture      |
+| Criteria               |         Beginner (1)         |         Developing (2)          |             Proficient (3)             |                           Advanced (4)                            |
+| ---------------------- | :--------------------------: | :-----------------------------: | :------------------------------------: | :---------------------------------------------------------------: |
+| Settings Understanding |  Uses only default settings  |      Configured one level       |  Manages all 3 levels with precedence  |            Designs team-wide configuration strategies             |
+| Hook Design            |     Cannot create hooks      |    Basic single-event hooks     |    Multi-event hooks with matchers     |           Hook systems with error handling and logging            |
+| Plugin Usage           |    Cannot install plugins    | Installs and uses basic plugins |   Evaluates plugin fit for workflows   |               Chains plugins for complex workflows                |
+| Plugin Creation        |    Cannot create plugins     | Basic manifest with skills only |  Full plugin bundle with hooks + MCP   | Production plugins with docs, tests, and marketplace distribution |
+| Autonomous Iteration   |    Never used Ralph Loop     |   Basic loop with simple task   | Effective completion promises + safety |          Complex multi-stage loops with cost management           |
+| Integration Thinking   | Components used in isolation |      Combines 2 components      |  Full extensibility stack configured   |               Team-wide extensibility architecture                |
 
 ---
 
