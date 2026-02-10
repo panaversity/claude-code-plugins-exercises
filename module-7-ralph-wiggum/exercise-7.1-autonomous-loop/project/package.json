@@ -1,0 +1,13 @@
+{
+  "name": "eslint-exercise-project",
+  "version": "1.0.0",
+  "description": "Project with deliberate ESLint errors for Ralph Loop exercise",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0"
+  }
+}

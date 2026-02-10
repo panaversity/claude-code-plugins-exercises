@@ -1,0 +1,12 @@
+{
+  "outputStyle": "Explanatory",
+  "includeCoAuthoredBy": false,
+  "permissions": {
+    "defaultMode": "acceptEdits",
+    "allow": ["Bash(npm run test:*)", "Bash(npm run lint:*)"],
+    "deny": ["Read(./.env)", "Read(./.env.*)"]
+  },
+  "env": {
+    "PROJECT_ENV": "development"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "TOOL_PATTERN_HERE",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash scripts/your-script.sh"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "TOOL_PATTERN_HERE",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash scripts/your-script.sh"
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash scripts/your-script.sh"
+          }
+        ]
+      }
+    ]
+  }
+}

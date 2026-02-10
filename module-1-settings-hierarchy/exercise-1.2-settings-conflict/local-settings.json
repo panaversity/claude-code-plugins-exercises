@@ -1,0 +1,9 @@
+{
+  "outputStyle": "Verbose",
+  "permissions": {
+    "defaultMode": "fullAuto"
+  },
+  "env": {
+    "PROJECT_ENV": "staging"
+  }
+}

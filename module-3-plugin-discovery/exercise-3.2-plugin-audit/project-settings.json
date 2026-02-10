@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "defaultMode": "acceptEdits",
+    "allow": ["Bash(npm run test:*)", "Bash(npm run lint:*)"],
+    "deny": ["Read(./.env)", "Read(./.env.*)"]
+  },
+  "outputStyle": "Explanatory",
+  "env": {
+    "PROJECT_ENV": "development"
+  }
+}

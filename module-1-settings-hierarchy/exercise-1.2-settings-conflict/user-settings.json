@@ -1,0 +1,10 @@
+{
+  "model": "claude-opus-4-6",
+  "outputStyle": "Concise",
+  "includeCoAuthoredBy": true,
+  "permissions": {
+    "defaultMode": "default",
+    "allow": ["Bash(npm run *)"],
+    "deny": []
+  }
+}

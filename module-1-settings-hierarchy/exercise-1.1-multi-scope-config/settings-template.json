@@ -1,0 +1,25 @@
+{
+  "// INSTRUCTIONS": "This template shows the available Claude Code settings options. Use it as reference when building your settings hierarchy.",
+
+  "model": "claude-sonnet-4-5-20250929",
+  "outputStyle": "Concise | Explanatory | Verbose",
+  "includeCoAuthoredBy": true,
+
+  "permissions": {
+    "defaultMode": "default | acceptEdits | fullAuto",
+    "allow": ["Bash(pattern)", "Read(pattern)", "Write(pattern)"],
+    "deny": ["Read(./.env)", "Write(pattern)"]
+  },
+
+  "env": {
+    "VARIABLE_NAME": "value"
+  },
+
+  "sandbox": {
+    "enabled": true
+  },
+
+  "hooks": {
+    "// NOTE": "Hooks can also be configured here -- covered in Module 2"
+  }
+}
